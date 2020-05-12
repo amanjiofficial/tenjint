@@ -1,0 +1,6 @@
+VirtualMachineAARCH64.mem\_read
+===============================
+
+.. currentmodule:: tenjint.plugins.machine
+
+.. automethod:: VirtualMachineAARCH64.mem_read

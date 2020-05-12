@@ -1,0 +1,6 @@
+VirtualMachineBase.mem\_write
+=============================
+
+.. currentmodule:: tenjint.plugins.machine
+
+.. automethod:: VirtualMachineBase.mem_write

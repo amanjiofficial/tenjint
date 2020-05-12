@@ -1,0 +1,6 @@
+VirtualMachineBase.mem\_read
+============================
+
+.. currentmodule:: tenjint.plugins.machine
+
+.. automethod:: VirtualMachineBase.mem_read

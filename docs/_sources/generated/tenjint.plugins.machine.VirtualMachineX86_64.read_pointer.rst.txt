@@ -1,0 +1,6 @@
+VirtualMachineX86\_64.read\_pointer
+===================================
+
+.. currentmodule:: tenjint.plugins.machine
+
+.. automethod:: VirtualMachineX86_64.read_pointer

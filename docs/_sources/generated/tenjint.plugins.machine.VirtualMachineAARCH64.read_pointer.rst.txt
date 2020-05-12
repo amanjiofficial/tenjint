@@ -1,0 +1,6 @@
+VirtualMachineAARCH64.read\_pointer
+===================================
+
+.. currentmodule:: tenjint.plugins.machine
+
+.. automethod:: VirtualMachineAARCH64.read_pointer

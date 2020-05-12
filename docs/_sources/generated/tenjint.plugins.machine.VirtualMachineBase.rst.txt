@@ -1,0 +1,54 @@
+VirtualMachineBase
+==================
+
+.. currentmodule:: tenjint.plugins.machine
+
+.. autoclass:: VirtualMachineBase
+
+   
+   
+   .. rubric:: Attributes
+   .. autosummary::
+      :toctree:
+   
+      VirtualMachineBase.arch
+   
+      VirtualMachineBase.cpu_count
+   
+      VirtualMachineBase.name
+   
+      VirtualMachineBase.os
+   
+      VirtualMachineBase.phys_mem_size
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+   .. autosummary::
+      :toctree:
+   
+      VirtualMachineBase.__init__
+   
+      VirtualMachineBase.cpu
+   
+      VirtualMachineBase.load
+   
+      VirtualMachineBase.mem_read
+   
+      VirtualMachineBase.mem_write
+   
+      VirtualMachineBase.phys_mem_read
+   
+      VirtualMachineBase.phys_mem_write
+   
+      VirtualMachineBase.read_pointer
+   
+      VirtualMachineBase.uninit
+   
+      VirtualMachineBase.vtop
+   
+   
+   

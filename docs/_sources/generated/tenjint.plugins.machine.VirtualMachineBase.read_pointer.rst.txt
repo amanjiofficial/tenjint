@@ -1,0 +1,6 @@
+VirtualMachineBase.read\_pointer
+================================
+
+.. currentmodule:: tenjint.plugins.machine
+
+.. automethod:: VirtualMachineBase.read_pointer
