@@ -86,6 +86,12 @@ class SystemEventBreakpoint(event.CpuEvent):
         return ("SystemEventBreakpoint: cpu={}, gva=0x{:x}, gpa=0x{:x}"
                 "".format(self.cpu_num, self.gva, self.gpa))
 
+    def serialize(self):
+        eventSerialize = super().serialize()
+        eventSerialize["gva"] = self.gva
+        eventSerialize["gpa"] = self.gpa
+        return eventSerialize
+
     @classmethod
     def filter(cls, cb_params, event):
         if type(event) != cls:
@@ -120,6 +126,12 @@ class SystemEventSingleStep(event.CpuEvent):
     def __str__(self):
         return ("SystemEventSingleStep: {}: cpu={}".format(self.method,
                                                            self.cpu_num))
+
+    def serialize(self):
+        eventSerialize = super().serialize()
+        eventSerialize["method"] = self.method
+        return eventSerialize
+
 
     @classmethod
     def filter(cls, cb_params, event):

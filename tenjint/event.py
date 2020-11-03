@@ -27,6 +27,7 @@ callbacks for events or to publish custom events to the system.
 from . import service
 from . import api
 from . import logger
+import time
 
 class Event(object):
     """The base class for all events."""
@@ -122,6 +123,12 @@ class Event(object):
             return True
         return False
 
+    def serialize(self):
+        return {
+            "name": self.__class__.__name__ ,
+            "time": time.time()
+        }
+
 class CpuEvent(Event):
     """Base class for all CPU events.
 
@@ -131,6 +138,11 @@ class CpuEvent(Event):
     def __init__(self, cpu_num):
         super().__init__()
         self.cpu_num = cpu_num
+
+    def serialize(self):
+        eventSerialize = super().serialize()
+        eventSerialize["cpu_num"] = self.cpu_num
+        return eventSerialize
 
 class EventPluginExists(Exception):
     pass
